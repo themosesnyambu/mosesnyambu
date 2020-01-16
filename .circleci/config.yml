@@ -1,17 +1,15 @@
-version: 2
-orbs:
-  snyk: snyk/snyk@0.0.8
 
+version: 2
 jobs:
   build:
     docker:
       - image: circleci/node:7.10
 
-   
     working_directory: ~/repo
 
     steps:
-   
+      - checkout
+
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -24,13 +22,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
-      - run: yarn lint
       - run: yarn test
-      - run: yarn ci:cypress-run
-
-
-      - snyk/scan:
-        fail-on-issues: true
-        monitor-on-build: true
-        token-variable: SNYK_TOKEN
