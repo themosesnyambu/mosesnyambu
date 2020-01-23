@@ -48,7 +48,7 @@ const ContactControl = () => {
             try {
                 setSubmitEnabled(false)
                 const res = await axios.post('https://milimaniserver.herokuapp.com/contact', data)
-                setSuccess(res.message)
+                setSuccess(res.data.message)
                 resetFields()
 
             } catch (error) { }
