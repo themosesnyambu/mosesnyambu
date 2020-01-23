@@ -4,8 +4,8 @@ const About =()=> {
  
     return (
       <React.Fragment>
-        <div className="row about section">
-          <div className="col-md-6 skills container">
+        <div className="about section">
+          <div className="skills">
             <div className="skill">
               <h6>Languages</h6>
               <ul>
@@ -37,6 +37,7 @@ const About =()=> {
               <ul>
                 <li>Heroku</li>
                 <li>Netlify</li>
+                <li>Circle Ci</li>
               </ul>
             </div>
             <div className="skill">
@@ -54,7 +55,7 @@ const About =()=> {
               </ul>
             </div>
           </div>
-          <div className='col-md-6'>
+          <div className='sum'>
           <h3>THE SUM</h3>
           <p>
             Moses Nyambu is a{" "}

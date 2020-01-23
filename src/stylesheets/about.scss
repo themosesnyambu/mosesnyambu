@@ -1,10 +1,10 @@
 .about {
-    padding: 20px;
+    padding-top: 20px;
     
     .skills {
         background: #000000;
         display: grid;
-        grid-template-columns: repeat(3, 4fr);
+        grid-template-columns: repeat(3, 1fr);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         .skill {
@@ -25,3 +25,23 @@
 .highlight{
     color:  #ff0eff;
 }
+
+@media(max-width: 568px){
+.about{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .sum{
+        margin: 5px;
+    }
+
+}
+
+}
+
+@media(min-width: 568px){
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+    }    
+    }

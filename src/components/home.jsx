@@ -6,7 +6,7 @@ const Home = () => {
                 className="header slide_in_left"
                 style={{ position: "relative" }}
             >
-                <h4>I am a Full Stack Developer.<br /> Fascinated by technology and a life-long learner.</h4>
+                <h4 style={{paddingTop:'40px', marginTop:'20px'}}>I am a Full Stack Developer.<br /> Fascinated by technology and a life-long learner.</h4>
             </div>
             <div className="center slide_in_up">
                 <a href="/contact">

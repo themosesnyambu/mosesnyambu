@@ -11,9 +11,9 @@ import { FaArrowRight, FaGitAlt } from 'react-icons/fa'
 const Portfolio=()=> {
     return (
       <div className="section">
-        <h4> Below is my recent work &#128516; </h4>
+        <h4 style={{padding: '20px'}}> Below is my recent work<span role='img' >&#128516; </span> </h4>
         <div className='project'>
-          <img className="img-fluid" src={zebe} alt="zebehtech home page image" />
+          <img className="img-fluid" src={zebe} alt="zebehtech home page" />
           <p className='project-description'>
             <strong>Angular Js project.</strong><br />
             Developed for Zebehtech Photography, a Voi based photography company.<br />
@@ -24,9 +24,9 @@ const Portfolio=()=> {
             Makes use of Bcrypt Js for password hashing.
                 </p>
           <div>
-            <a href='https://zebehtech.herokuapp.com' target='_blank'>visit site <FaArrowRight /></a>
+            <a href='https://zebehtech.herokuapp.com' target='_blank' rel="noopener noreferrer">visit site <FaArrowRight /></a>
             <br /><br />
-            <a href='https://github.com/mbuste/zebehtech' target='_blank'>view source <FaGitAlt /></a>
+            <a href='https://github.com/mbuste/zebehtech' target='_blank' rel="noopener noreferrer">view source <FaGitAlt /></a>
           </div>
         </div>
 
@@ -41,9 +41,9 @@ const Portfolio=()=> {
             I make use of css pre processing by using SCSS.<br />
           </p>
           <div>
-            <a href='https://mosesnyambu.herokuapp.com' target='_blank'>visit site <FaArrowRight /></a>
+            <a href='https://mosesnyambu.herokuapp.com' target='_blank' rel="noopener noreferrer">visit site <FaArrowRight /></a>
             <br /><br />
-            <a href='https://github.com/mbuste/mosesnyambu' target='_blank'>view source <FaGitAlt /></a>
+            <a href='https://github.com/mbuste/mosesnyambu' target='_blank' rel="noopener noreferrer">view source <FaGitAlt /></a>
           </div>
         </div>
 
@@ -61,9 +61,9 @@ const Portfolio=()=> {
             and json web token for authentication.
           </p>
           <div>
-            <a href='https://milimanipalace.herokuapp.com' target='_blank'>visit site <FaArrowRight /></a>
+            <a href='https://milimanipalace.herokuapp.com' target='_blank' rel="noopener noreferrer">visit site <FaArrowRight /></a>
             <br /><br />
-            <a href='https://github.com/mbuste/milimanipalace' target='_blank'>view source <FaGitAlt /></a>
+            <a href='https://github.com/mbuste/milimanipalace' target='_blank' rel="noopener noreferrer">view source <FaGitAlt /></a>
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const Portfolio=()=> {
               <br />Utilizes SQLite for database and translation functions for object animation.
                 </p>
           <div>
-            <a href='https://github.com/mbuste/snakegame' target='_blank'>view source <FaGitAlt /></a>
+            <a href='https://github.com/mbuste/snakegame' target='_blank' rel="noopener noreferrer">view source <FaGitAlt /></a>
           </div>
         </div>
 
